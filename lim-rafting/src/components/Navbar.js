@@ -32,7 +32,8 @@ const Navbar = () =>
 			<nav className="navbar">
 				<div className="navbar-container">
 					<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-						LIM ADVENTURE &nbsp; <i className="fas fa-compass"></i>
+						LIM ADVENTURE
+						<i className="fas fa-compass"></i>
 					</Link>
 					<div className="menu-icon" onCLick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
