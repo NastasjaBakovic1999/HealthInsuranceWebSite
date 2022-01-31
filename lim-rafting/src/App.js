@@ -1,8 +1,9 @@
-import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Ponuda} from './components/pages/Ponuda';
+import {Kontakt} from './components/pages/Kontakt';
+import {Prijava} from './components/pages/Kontakt';
 import './App.css';
 
 function App()
@@ -11,10 +12,12 @@ function App()
     <>
       <Router>
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/ponuda" element={<Ponuda />} />
-        </Routes>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/kontakt' component={Kontakt} />
+          <Route path='/ponuda' component={Ponuda} />
+          <Route path='/prijava' component={Prijava} />
+        </Switch>
       </Router>
     </>
   );
