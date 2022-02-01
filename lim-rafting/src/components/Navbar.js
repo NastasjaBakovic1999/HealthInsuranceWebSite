@@ -35,27 +35,27 @@ const Navbar = () =>
 						LIM ADVENTURE
 						<i className="fas fa-compass"></i>
 					</Link>
-					<div className="menu-icon" onCLick={handleClick}>
+					<div className="menu-icon" onClick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 					</div>
 					<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 						<li className="nav-item">
-							<Link to='/' className="nav-links" onCLick={closeMobileMenu}>
+							<Link to='/' className="nav-links" onClick={closeMobileMenu}>
 								Početna
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to='/ponuda' className="nav-links" onCLick={closeMobileMenu}>
+							<Link to='/ponuda' className="nav-links" onClick={closeMobileMenu}>
 								Ponuda
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to='/kontakt' className="nav-links" onCLick={closeMobileMenu}>
+							<Link to='/kontakt' className="nav-links" onClick={closeMobileMenu}>
 								Kontakt
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to='/prijava' className="nav-links-mobile" onCLick={closeMobileMenu}>
+							<Link to='/prijava' className="nav-links-mobile" onClick={closeMobileMenu}>
 								Prijavi se
 							</Link>
 						</li>

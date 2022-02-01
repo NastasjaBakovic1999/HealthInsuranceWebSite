@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Ponuda} from './components/pages/Ponuda';
-import {Kontakt} from './components/pages/Kontakt';
-import {Prijava} from './components/pages/Kontakt';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Ponuda from './components/pages/Ponuda';
+import Kontakt from './components/pages/Kontakt';
+import Prijava from './components/pages/Prijava';
+import React from 'react';
 import './App.css';
 
 function App()
@@ -12,12 +13,12 @@ function App()
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/kontakt' component={Kontakt} />
-          <Route path='/ponuda' component={Ponuda} />
-          <Route path='/prijava' component={Prijava} />
-        </Switch>
+        <Routes>
+          <Route path='/' exact element={Home()} />
+          <Route path='/kontakt' element={Kontakt()} />
+          <Route path='/ponuda' element={Ponuda()} />
+          <Route path='/prijava' element={Prijava()} />
+        </Routes>
       </Router>
     </>
   );
