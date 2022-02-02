@@ -1,6 +1,11 @@
 import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
+import lisjaStena from '../images/lisjaStena.jfif';
+import uvac from '../images/uvac.jfif';
+import zlatibor from '../images/zlatibor.jpg';
+import crniVrh from '../images/crniVrh.jpg';
+import lim from '../images/lim.jfif';
 
 function Cards()
 {
@@ -11,13 +16,13 @@ function Cards()
 				<div className="cards__wrapper">
 					<ul className="cards__items">
 						<CardItem
-							src="../images/jungle.png"
+							src={lim}
 							text="Istrazi skrivene brzake Lima"
 							label="Avantura"
 							path="/"
 						/>
 						<CardItem
-							src="../images/rafting1.jpg"
+							src={crniVrh}
 							text="Osvoji Crni Vrh i doživi pravo planinarsko iskustvo"
 							label="Planinarenje"
 							path="/"
@@ -25,19 +30,19 @@ function Cards()
 					</ul>
 					<ul className="cards__items">
 						<CardItem
-							src="../images/rafting1.jpg"
+							src={lisjaStena}
 							text="Ako si planinar početnik, Lisja stena je prilika da se oprobaš"
 							label="Planinarenje"
 							path="/"
 						/>
 						<CardItem
-							src="../images/rafting1.jpg"
+							src={uvac}
 							text="Zaplovi meandrima Uvca - iskusi pravu prirodu"
 							label="Avantura"
 							path="/"
 						/>
 						<CardItem
-							src="../images/rafting1.jpg"
+							src={zlatibor}
 							text="Oseti svežinu čistog vazduha Zlatibora"
 							label="Avantura"
 							path="/"
