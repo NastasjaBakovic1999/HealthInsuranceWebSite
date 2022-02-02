@@ -17,7 +17,7 @@
 }
 
 .kontakt {
-  background-image: url('./components/images/kontakt.jpg');
+  background-image: url('./images/kontakt.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .ponuda {
-  background-image: url('./components/images/ponuda.jpg');
+  background-image: url('./images/ponuda.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 .prijava {
-  background-image: url('./components/images/prijava.jpg');
+  background-image: url('./images/prijava.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
